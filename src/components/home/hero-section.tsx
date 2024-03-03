@@ -11,14 +11,14 @@ const HeroSection: React.FC = () => {
       <div className="py-12 lg:py-20 flex flex-col gap-6 lg:gap-10 items-center justify-center text-center max-w-full overflow-hidden">
         <div className="flex flex-col gap-4 lg:gap-8 items-center justify-center">
           {/* Pill */}
-          <div className="bg-slate-50 rounded-full border shadow-lg p-1 flex flex-row gap-1 items-center justify-center pr-3 scale-75 lg:scale-100">
+          <div className="bg-slate-50 rounded-full border shadow-lg p-1 flex flex-row gap-1 items-center justify-center pr-3">
             <div className="h-6 w-6 bg-primary p-1 rounded-full flex items-center justify-center">
               <GlobeAltIcon className="h-4 w-4 text-primary-foreground fill-current" />
             </div>
             <p className="text-xs lg:text-sm">Discover your dream job</p>
           </div>
           {/* Heading Text */}
-          <H1 className="w-full max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <H1 className="w-full max-w-xl md:max-w-2xl lg:max-w-3xl text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-800">
             Bridging the gap between{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
               talent
