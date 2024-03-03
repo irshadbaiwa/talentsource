@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import TicgetLogo from '@/components/ui/logo';
 import { Button } from '@/components/ui/button';
@@ -29,6 +30,8 @@ const callToActionLinks = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
   const search = () => {
     console.log('Searching...');
   };
@@ -94,7 +97,14 @@ export default function Header() {
                 <div>
                   <div className="flex flex-col items-center m-4 gap-4">
                     {Links.map((link) => (
-                      <Button variant="link" asChild key={link.href}>
+                      <Button
+                        variant="link"
+                        asChild
+                        key={link.href}
+                        className={cn({
+                          'text-primary': link.href === pathname,
+                        })}
+                      >
                         <Link href={link.href}>{link.link}</Link>
                       </Button>
                     ))}
@@ -137,7 +147,14 @@ export default function Header() {
         <div className="shrink">
           <div className="flex items-center mx-4 gap-4">
             {Links.map((link) => (
-              <Button variant="link" asChild key={link.href}>
+              <Button
+                variant="link"
+                asChild
+                key={link.href}
+                className={cn({
+                  'text-primary': link.href === pathname,
+                })}
+              >
                 <Link href={link.href}>{link.link}</Link>
               </Button>
             ))}
