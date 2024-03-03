@@ -2,19 +2,22 @@
 
 import { InfiniteMovingCards } from '../ui/infinite-moving-cards';
 import { H2 } from '@/components/ui/typography';
+import { FadeIn } from '@/components/transitions';
 
 const Testimonials: React.FC = () => {
   return (
     <div className="py-16 sm:py-20">
       <div className="max-w-2xl screen-gutter mb-10">
-        <h2 className="text-base font-bold leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
-          Quotes
-        </h2>
-        <H2>From our users</H2>
-        <p className="mt-6 leading-6 md:text-lg md:leading-8">
-          Discover firsthand experiences and success stories. Hear from our past
-          users and envision the possibilities that await you.
-        </p>
+        <FadeIn from="left">
+          <h2 className="text-base font-bold leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
+            Quotes
+          </h2>
+          <H2>From our users</H2>
+          <p className="mt-6 leading-6 md:text-lg md:leading-8">
+            Discover firsthand experiences and success stories. Hear from our
+            past users and envision the possibilities that await you.
+          </p>
+        </FadeIn>
       </div>
       <div className="relative overflow-hidden">
         <InfiniteMovingCards

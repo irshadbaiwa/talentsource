@@ -1,5 +1,6 @@
 import { InfiniteMovingLogoCloud } from '@/components/ui/moving-logo-cloud';
 import { H2 } from '@/components/ui/typography';
+import { FadeIn } from '@/components/transitions';
 
 const companies = [
   { name: 'Company 1', imgSrc: '/company1.svg' },
@@ -37,34 +38,42 @@ const StatDetails = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-3 md:gap-6 lg:max-w-3xl">
           {/* Stats */}
-          <div className="bg-gradient-to-t from-gray-900 to-gray-700 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
-            <H2 className="text-white">1M+</H2>
-            <h3 className="text-sm md:text-base font-bold leading-3 md:leading-5 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
-              Matches Made
-            </h3>
-            <p className="text-xs md:text-base mt-2 md:mt-3 text-supporting">
-              Talentsource has been relied upon by the world's top companies to
-              discover and recruit the individuals crucial to their success.{' '}
-              <span className="hidden sm:inline">
-                Since our inception, we've facilitated over 2 million successful
-                matches.
-              </span>
-            </p>
-          </div>
-          <div className="flex gap-3 md:gap-6">
-            <div className="flex-1 h-full bg-gradient-to-b from-slate-200 to-slate-50 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
-              <H2>200K+</H2>
-              <h3 className="text-sm md:text-base font-bold leading-4 md:leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
-                Jobs
+          {/* Box 1 */}
+          <FadeIn>
+            <div className="bg-gradient-to-t from-gray-900 to-gray-700 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
+              <H2 className="text-white">1M+</H2>
+              <h3 className="text-sm md:text-base font-bold leading-3 md:leading-5 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
+                Matches Made
               </h3>
+              <p className="text-xs md:text-base mt-2 md:mt-3 text-supporting">
+                Talentsource has been relied upon by the world's top companies
+                to discover and recruit the individuals crucial to their
+                success.{' '}
+                <span className="hidden sm:inline">
+                  Since our inception, we've facilitated over 2 million
+                  successful matches.
+                </span>
+              </p>
             </div>
-            <div className="flex-1 h-full bg-gradient-to-b from-blue-800 to-blue-500 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
-              <H2 className="text-white">300K+</H2>
-              <h3 className="text-sm md:text-base font-bold leading-4 md:leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-300">
-                Candidates
-              </h3>
+          </FadeIn>
+          <FadeIn from="top">
+            <div className="flex gap-3 md:gap-6">
+              {/* Box 2 */}
+              <div className="flex-1 h-full bg-gradient-to-b from-slate-200 to-slate-50 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
+                <H2>200K+</H2>
+                <h3 className="text-sm md:text-base font-bold leading-4 md:leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
+                  Jobs
+                </h3>
+              </div>
+              {/* Box 3 */}
+              <div className="flex-1 h-full bg-gradient-to-b from-blue-800 to-blue-500 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
+                <H2 className="text-white">300K+</H2>
+                <h3 className="text-sm md:text-base font-bold leading-4 md:leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-50 to-blue-300">
+                  Candidates
+                </h3>
+              </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
     </div>

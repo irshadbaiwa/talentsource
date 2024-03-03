@@ -76,12 +76,12 @@ export default function Header() {
             // @ts-ignore
             fullScreen
           >
-            <div className="h-full w-full screen-gutter py-4 flex flex-col gap-6 overflow-y-auto">
+            <div className="h-full w-full screen-gutter py-4 mt-8 flex flex-col gap-6 overflow-y-auto">
               <div className="w-full flex justify-end">
                 {/* Close Button */}
                 <DrawerClose asChild>
                   <Button variant="ghost" size="icon">
-                    <XMarkIcon className="h-4 w-4" />
+                    <XMarkIcon className="h-6 w-6" />
                   </Button>
                 </DrawerClose>
               </div>

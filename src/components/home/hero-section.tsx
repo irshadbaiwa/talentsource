@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { H1 } from '@/components/ui/typography';
 import { Button } from '@/components/ui/button';
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
+import { FadeIn } from '@/components/transitions';
 
 const HeroSection: React.FC = () => {
   return (
@@ -35,14 +36,16 @@ const HeroSection: React.FC = () => {
           <br /> Join today and unlock your true potential
         </p>
         {/* CTA */}
-        <div className="flex flex-wrap gap-2 lg:gap-4 items-center justify-center mt-6 lg:mt-0">
-          <Button size="lg" asChild>
-            <Link href="#">Find Job</Link>
-          </Button>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="#">Hire Talent</Link>
-          </Button>
-        </div>
+        <FadeIn>
+          <div className="flex flex-wrap gap-2 lg:gap-4 items-center justify-center mt-6 lg:mt-0">
+            <Button size="lg" asChild>
+              <Link href="#">Find Job</Link>
+            </Button>
+            <Button size="lg" variant="secondary" asChild>
+              <Link href="#">Hire Talent</Link>
+            </Button>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
