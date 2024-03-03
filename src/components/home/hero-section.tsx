@@ -39,10 +39,10 @@ const HeroSection: React.FC = () => {
         <FadeIn>
           <div className="flex flex-wrap gap-2 lg:gap-4 items-center justify-center mt-6 lg:mt-0">
             <Button size="lg" asChild>
-              <Link href="#">Find Job</Link>
+              <Link href="/jobs">Find Job</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="#">Hire Talent</Link>
+              <Link href="/hire">Hire Talent</Link>
             </Button>
           </div>
         </FadeIn>

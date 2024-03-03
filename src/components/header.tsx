@@ -19,14 +19,14 @@ import {
 } from '@heroicons/react/24/outline';
 
 const Links = [
-  { link: 'Discover', href: '#discover' },
-  { link: 'Find Job', href: '#jobs' },
-  { link: 'Hire talent', href: '#hire' },
-  { link: 'About', href: '#about' },
+  { link: 'Discover', href: '/discover' },
+  { link: 'Find Job', href: '/jobs' },
+  { link: 'Hire talent', href: '/hire' },
+  { link: 'About', href: '/about' },
 ];
 const callToActionLinks = [
-  { link: 'Sign Up', href: '#sign-up' },
-  { link: 'Log In', href: '#log-in' },
+  { link: 'Sign Up', href: '/signup' },
+  { link: 'Log In', href: '/login' },
 ];
 
 export default function Header() {

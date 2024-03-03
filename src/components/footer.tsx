@@ -17,8 +17,8 @@ const contactInfo = [
 ];
 const footerLinks = [
   { name: 'Home', link: '/' },
-  { name: 'Discover', link: '#' },
-  { name: 'About', link: '#' },
+  { name: 'Discover', link: '/discover' },
+  { name: 'About', link: '/about' },
   { name: 'Help', link: '#' },
 ];
 

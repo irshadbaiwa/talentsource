@@ -6,8 +6,9 @@ import '@/app/globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Talent Source',
-  description: 'Bridging the gap between talent and employers',
+  title: { template: '%s | Talentsource', default: 'Talentsource' },
+  description:
+    'Bridging the gap between talent and employers. Explore endless oppurtunities for professional growth. Join today and unlock your true potential',
 };
 
 export default function RootLayout({

@@ -81,7 +81,7 @@ const FeaturesSection = () => {
           <div className="w-full mt-12 lg:mt-16 flex justify-center gap-4">
             <Button variant="link" asChild>
               <Link
-                href="#"
+                href="/jobs"
                 className="text-primary flex gap-1 justify-center items-center"
               >
                 Learn More
@@ -89,7 +89,7 @@ const FeaturesSection = () => {
               </Link>
             </Button>
             <Button asChild>
-              <Link href="#">Get Started</Link>
+              <Link href="/signup">Get Started</Link>
             </Button>
           </div>
         </div>
@@ -101,7 +101,7 @@ const FeaturesSection = () => {
           <div className="mx-auto py-8 sm:py-24">
             <div className="bg-gradient-to-t from-gray-900 to-gray-700 rounded-xl md:rounded-3xl grid grid-cols-5 gap-4 lg:gap-12 p-4 md:p-8 items-center justify-center">
               {/* Image */}
-              <div className="col-span-5 lg:col-span-2 w-full h-64 lg:h-96 bg-gray-600 rounded-lg lg:rounded-2xl overflow-hidden">
+              <div className="col-span-5 lg:col-span-2 w-full h-64 lg:h-96 bg-gray-600 rounded-lg md:rounded-2xl overflow-hidden">
                 <img src="/office.jpg" className="h-full w-full object-cover" />
               </div>
               {/* Text */}
@@ -122,7 +122,7 @@ const FeaturesSection = () => {
                 </p>
                 <Button variant="link" className="pl-0 mt-4 lg:mt-8" asChild>
                   <Link
-                    href="#"
+                    href="/hire"
                     className="text-primary flex gap-1 justify-center items-center"
                   >
                     Start Hiring
