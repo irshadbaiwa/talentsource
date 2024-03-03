@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
             <p className="text-xs lg:text-sm">Discover your dream job</p>
           </div>
           {/* Heading Text */}
-          <H1 className="w-full max-w-xl md:max-w-2xl lg:max-w-3xl text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+          <H1 className="w-full max-w-xl md:max-w-2xl lg:max-w-3xl text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600">
             Bridging the gap between{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
               talent
