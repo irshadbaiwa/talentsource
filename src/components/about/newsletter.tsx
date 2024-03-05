@@ -19,7 +19,7 @@ const NewsletterForm: React.FC = () => {
           <Input
             type="email"
             placeholder="Enter your email"
-            className="flex-1 bg-transparent border-gray-600"
+            className="flex-1 bg-transparent border-gray-600 text-white"
           />
           <Button type="submit">Subscribe</Button>
         </form>
