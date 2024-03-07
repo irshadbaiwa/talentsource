@@ -22,7 +22,11 @@ const Stats: React.FC = () => {
 
         {/* Moving Logos */}
         <div className="my-4 md:my-8">
-          <InfiniteMovingLogoCloud items={companies} speed="slow" />
+          <InfiniteMovingLogoCloud
+            items={companies}
+            speed="slow"
+            className="mx-auto"
+          />
         </div>
       </div>
 

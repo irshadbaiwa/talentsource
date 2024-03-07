@@ -24,6 +24,7 @@ const Testimonials: React.FC = () => {
           items={testimonials}
           direction="right"
           speed="slow"
+          className="mx-auto"
         />
       </div>
     </div>
