@@ -19,7 +19,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 const Links = [
-  { link: 'Discover', href: '/discover' },
+  { link: 'Home', href: '/' },
   { link: 'Find Job', href: '/jobs' },
   { link: 'Hire talent', href: '/hire' },
   { link: 'About', href: '/about' },

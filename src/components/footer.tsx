@@ -17,9 +17,9 @@ const contactInfo = [
 ];
 const footerLinks = [
   { name: 'Home', link: '/' },
-  { name: 'Discover', link: '/discover' },
+  { name: 'Find Job', link: '/jobs' },
+  { name: 'Hire Talent', link: '/hire' },
   { name: 'About', link: '/about' },
-  { name: 'Help', link: '#' },
 ];
 
 const Footer: React.FC = () => {
