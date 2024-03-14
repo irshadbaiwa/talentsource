@@ -1,7 +1,7 @@
 import Header from '@/components/header';
 import FeaturesSection from '@/components/home/features-section';
 import HeroSection from '@/components/home/hero-section';
-import Stats from '@/components/home/stats';
+import Stats from '@/components/stats';
 import Testimonials from '@/components/testimonials';
 import Footer from '@/components/footer';
 
