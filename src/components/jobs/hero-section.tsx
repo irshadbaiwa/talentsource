@@ -18,10 +18,7 @@ const JobsPageHeroSection: React.FC = () => {
           <FadeIn>
             <div className="my-10 flex items-center justify-center gap-2 lg-gap-4">
               <Button asChild>
-                <Link href="/signup">Get Started</Link>
-              </Button>
-              <Button variant="secondary" asChild>
-                <Link href="/login">View Profile</Link>
+                <Link href="/signup">Create your profile</Link>
               </Button>
             </div>
           </FadeIn>

@@ -1,6 +1,6 @@
 'use client';
 
-import { InfiniteMovingCards } from '../ui/infinite-moving-cards';
+import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 import { H2 } from '@/components/ui/typography';
 import { FadeIn } from '@/components/transitions';
 

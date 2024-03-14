@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 import AboutPageHeroSection from '@/components/about/hero-section';
 import Vision from '@/components/about/vision';
 import OurTeamSection from '@/components/about/team';
-import NewsletterForm from '@/components/about/newsletter';
+import NewsletterForm from '@/components/newsletter';
 
 export const metadata: Metadata = {
   title: 'About Us',

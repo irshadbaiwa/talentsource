@@ -37,21 +37,21 @@ const DiscoverIndustries: React.FC = () => {
             </h2>
             <H2>Discover Industries</H2>
             <p className="mt-6 leading-6 md:text-lg md:leading-8">
-              There are over 1,000 companies hiring with us. Match with
-              companies from your preferred sector.
+              There are over 1,000 companies hiring using our platform. Match
+              with companies from your preferred sector.
             </p>
           </FadeIn>
         </div>
         <div className="flex-1 flex items-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
           {/* Items */}
-          <div className="w-full flex shrink-0 flex-wrap gap-2 md:gap-4 justify-center items-center">
+          <div className="w-full flex shrink-0 flex-wrap gap-x-2 gap-y-3 md:gap-4 justify-center items-center">
             {industries.map((item) => (
               <div
                 key={item.industry}
-                className="py-2 md:py-3 px-4 md:px-6 bg-slate-50 rounded-full border flex items-center justify-center gap-2"
+                className="py-2 md:py-3 px-4 md:px-6 bg-slate-50 rounded-full border hover:border-primary hover:shadow-xl cursor-pointer group transition-all flex items-center justify-center gap-2"
               >
-                <item.icon className="h-5 w-5 md:h-6 md:w-6 text-gray-300" />
-                <p className="font-bold text-supporting text-xs md:text-base">
+                <item.icon className="h-5 w-5 md:h-6 md:w-6 text-gray-300 group-hover:text-primary" />
+                <p className="font-bold text-supporting text-xs md:text-base group-hover:text-primary">
                   {item.industry}
                 </p>
               </div>
