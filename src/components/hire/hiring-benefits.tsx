@@ -7,7 +7,7 @@ import {
   LightBulbIcon,
   UsersIcon,
   CircleStackIcon,
-} from '@heroicons/react/24/solid';
+} from '@heroicons/react/24/outline';
 
 const benefits = [
   {
@@ -66,7 +66,7 @@ const HiringBenefits: React.FC = () => {
                   <dt className="text-base font-semibold leading-5 md:leading-7 text-gray-900">
                     <div className="absolute left-0 top-0 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-lg bg-primary">
                       <item.icon
-                        className="h-6 w-6 text-white"
+                        className="h-6 w-6 text-primary-foreground"
                         aria-hidden="true"
                       />
                     </div>
