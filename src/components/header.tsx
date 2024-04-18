@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import TicgetLogo from '@/components/ui/logo';
+import TalentSourceLogo from '@/components/ui/logo';
 import { Button } from '@/components/ui/button';
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerTrigger,
-} from '@/components/ui/drawer';
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from '@/components/ui/sheet';
 import {
   Bars2Icon,
   MagnifyingGlassIcon,
@@ -67,31 +67,27 @@ export default function Header() {
     >
       {/* Navbar (Mobile) */}
       <nav className="lg:hidden w-full flex justify-between items-center">
-        {/* Drawer */}
-        <Drawer direction="left">
-          {/* Open button */}
-          <DrawerTrigger asChild>
+        {/* Menu */}
+        <Sheet>
+          <SheetTrigger asChild>
             <Button variant="outline" size="icon">
               <Bars2Icon className="h-4 w-4" />
             </Button>
-          </DrawerTrigger>
-          <DrawerContent
-            // @ts-ignore
-            fullScreen
-          >
-            <div className="h-full w-full screen-gutter py-4 mt-8 flex flex-col gap-6 overflow-y-auto">
+          </SheetTrigger>
+          <SheetContent side="left" className="h-full w-full p-0">
+            <div className="h-full w-full screen-gutter py-4 flex flex-col gap-6 overflow-y-auto">
               <div className="w-full flex justify-end">
                 {/* Close Button */}
-                <DrawerClose asChild>
+                <SheetClose asChild>
                   <Button variant="ghost" size="icon">
                     <XMarkIcon className="h-6 w-6" />
                   </Button>
-                </DrawerClose>
+                </SheetClose>
               </div>
 
               <div className="flex-1 flex flex-col justify-between items-center">
                 {/* Logo */}
-                <TicgetLogo />
+                <TalentSourceLogo />
 
                 {/* Supporting Links */}
                 <div>
@@ -126,11 +122,11 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </DrawerContent>
-        </Drawer>
+          </SheetContent>
+        </Sheet>
 
         {/* Logo */}
-        <TicgetLogo />
+        <TalentSourceLogo />
 
         {/* Search Button */}
         <Button variant="outline" size="icon" onClick={search}>
@@ -141,7 +137,7 @@ export default function Header() {
       {/* Navbar desktop */}
       <nav className="hidden lg:flex justify-between items-center">
         {/* Logo (Desktop) */}
-        <TicgetLogo />
+        <TalentSourceLogo />
 
         {/* Supporting links (Desktop) */}
         <div className="shrink">

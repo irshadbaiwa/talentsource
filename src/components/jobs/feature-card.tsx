@@ -1,9 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { H2 } from '@/components/ui/typography';
 import { FadeIn } from '@/components/transitions';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 interface Props {
   feature: string;
@@ -32,8 +31,9 @@ const FeatureCard: React.FC<Props> = ({
         <div className="-z-10 absolute -top-1/4 right-1/4 translate-y-1/4 translate-x-1/4 bg-background bg-dot-black/[0.5] h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96"></div>
         <div className="-z-10 absolute -top-1/4 left-1/4 translate-y-2/4 -translate-x-1/4 bg-background bg-dot-black/[0.5] h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96"></div>
         <FadeIn from={reversed ? 'right' : 'left'}>
-          <div className="bg-slate-100 h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96 rounded-xl lg:rounded-3xl overflow-hidden">
-            <img
+          <div className="relative bg-slate-100 h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96 rounded-xl lg:rounded-3xl overflow-hidden">
+            <Image
+              fill
               src={imgSrc}
               alt={feature}
               className="h-full w-full object-cover"
@@ -52,14 +52,6 @@ const FeatureCard: React.FC<Props> = ({
           <Icon className="h-10 w-10 text-primary mb-2" />
           <H2>{feature}</H2>
           <p className="mt-6 leading-6 md:text-lg md:leading-8">{desc}</p>
-          {/* <Button className="mt-8" asChild>
-            <Link
-              href="/signup"
-              className="text-primary flex gap-1 justify-center items-center"
-            >
-              Get Started
-            </Link>
-          </Button> */}
         </div>
       </FadeIn>
     </div>

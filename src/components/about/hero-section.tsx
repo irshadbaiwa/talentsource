@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { H1 } from '@/components/ui/typography';
 
 const AboutPageHeroSection: React.FC = () => {
@@ -17,8 +18,9 @@ const AboutPageHeroSection: React.FC = () => {
         <div className="relative p-5 w-full md:w-1/2 md:h-full flex justify-center items-center mb-8 md:mb-0">
           <div className="-z-10 absolute -top-1/4 right-1/4 translate-y-1/4 translate-x-1/4 bg-background bg-dot-black/[0.5] h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96"></div>
           <div className="-z-10 absolute top-1/4 left-1/4 translate-y-1/4 -translate-x-1/4 bg-background bg-dot-black/[0.5] h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96"></div>
-          <div className="bg-slate-100 h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96 rounded-xl lg:rounded-3xl overflow-hidden">
-            <img
+          <div className="relative bg-slate-100 h-48 w-48 md:h-72 md:w-72 lg:h-96 lg:w-96 rounded-xl lg:rounded-3xl overflow-hidden">
+            <Image
+              fill
               src="/about-us.jpg"
               alt="3 people working together"
               className="h-full w-full object-cover"

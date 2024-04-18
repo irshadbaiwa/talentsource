@@ -9,6 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { Button } from '@/components/ui/button';
 import { FadeIn } from '@/components/transitions';
+import Image from 'next/image';
 
 const features = [
   {
@@ -101,8 +102,13 @@ const FeaturesSection = () => {
           <div className="mx-auto py-8 sm:py-24">
             <div className="bg-gradient-to-t from-gray-900 to-gray-700 rounded-xl md:rounded-3xl grid grid-cols-5 gap-4 lg:gap-12 p-4 md:p-8 items-center justify-center">
               {/* Image */}
-              <div className="col-span-5 lg:col-span-2 w-full h-64 lg:h-96 bg-gray-600 rounded-lg md:rounded-2xl overflow-hidden">
-                <img src="/office.jpg" className="h-full w-full object-cover" />
+              <div className="relative col-span-5 lg:col-span-2 w-full h-64 lg:h-96 bg-gray-600 rounded-lg md:rounded-2xl overflow-hidden">
+                <Image
+                  fill
+                  alt="Our Office"
+                  src="/office.jpg"
+                  className="h-full w-full object-cover"
+                />
               </div>
               {/* Text */}
               <div className="col-span-5 lg:col-span-3">

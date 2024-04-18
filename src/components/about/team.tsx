@@ -1,5 +1,6 @@
 import { H2 } from '@/components/ui/typography';
 import { FadeIn } from '@/components/transitions';
+import Image from 'next/image';
 
 const OurTeamSection: React.FC = () => {
   return (
@@ -23,8 +24,9 @@ const OurTeamSection: React.FC = () => {
             .map((item, index) => (
               <FadeIn>
                 <div key={index} className="flex flex-row items-center gap-4">
-                  <div className="h-20 w-20 bg-slate-100 rounded-full overflow-hidden">
-                    <img
+                  <div className="relative h-20 w-20 bg-slate-100 rounded-full overflow-hidden">
+                    <Image
+                      fill
                       src="/avatar.jpg"
                       alt="Firstname Lastname"
                       className="h-full w-full object-cover"

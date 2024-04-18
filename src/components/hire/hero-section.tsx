@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { H1 } from '@/components/ui/typography';
 import { FadeIn } from '@/components/transitions';
@@ -28,23 +29,26 @@ const HirePageHeroSection: React.FC = () => {
         </div>
         {/* Images */}
         <div className="self-center w-full grid grid-cols-2 gap-2 lg:gap-4 px-4 md:px-8">
-          <div className="self-center w-full h-44 md:h-64 lg:h-80 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
-            <img
+          <div className="relative self-center w-full h-44 md:h-64 lg:h-80 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
+            <Image
+              fill
               src="/hire1.jpg"
               alt="Team meeting"
               className="h-full w-full object-cover"
             />
           </div>
           <div className="flex flex-col gap-2 lg:gap-4">
-            <div className="w-3/4 h-24 md:h-36 lg:h-48 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
-              <img
+            <div className="relative w-3/4 h-24 md:h-36 lg:h-48 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
+              <Image
+                fill
                 src="/hire2.jpg"
                 alt="Team meeting"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-full h-28 md:h-40 lg:h-56 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
-              <img
+            <div className="relative w-full h-28 md:h-40 lg:h-56 rounded-xl lg:rounded-3xl overflow-hidden bg-slate-50">
+              <Image
+                fill
                 src="/hire3.jpg"
                 alt="Office space"
                 className="h-full w-full object-cover"
