@@ -10,7 +10,7 @@ const Vision: React.FC = () => {
     <section className="screen-gutter py-28 sm:py-32 space-y-6">
       <FadeIn>
         {/* About Us */}
-        <div className="w-full max-w-4xl mx-auto bg-gradient-to-t from-gray-900 to-gray-700 border border-gray-900 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
+        <div className="w-full max-w-4xl mx-auto bg-gradient-to-b from-gray-900 to-gray-700 border border-gray-900 rounded-lg md:rounded-2xl py-4 px-4 md:py-6 md:px-8 overflow-hidden text-ellipsis">
           <BuildingOffice2Icon className="h-8 w-8 lg:h-10 md:w-10 text-gray-200 mb-2" />
           <h3 className="text-sm md:text-base font-bold leading-4 md:leading-7 bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-primary">
             About Us
